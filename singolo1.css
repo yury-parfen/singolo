@@ -25,7 +25,7 @@
          url('/assets/lato-v16-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
          url('/assets/lato-v16-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-  
+
   html {
       box-sizing: border-box;
   }
@@ -34,4 +34,63 @@
   *::before, 
   *::after {
       box-sizing: inherit;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+  }
+
+  .header {
+    width: 1020px;
+    height: 89px;
+    background-color: #2d303a;
+  }
+
+  h1 {
+    font-size: 25px;
+    line-height: 6px;
+    color: #ffffff;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: left;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  span {
+      color: #f06c64;
+  }
+
+  .header-bottom {
+    width: 1020px;
+    height: 6px;
+    background-color: #323746;
+  }
+
+  .header-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 40px;
+  }
+
+  .header-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: 40px;
+  }
+
+  .header-item {
+      margin-right: 25px;
+  }
+
+  .header-link {
+    font-size: 12px;
+    line-height: 6px;
+    color: #ffffff;
+    font-family: "Lato";
+    font-weight: 700;
   }
