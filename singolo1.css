@@ -27,21 +27,28 @@
   }
 
   html {
-      box-sizing: border-box;
+    box-sizing: border-box;
   }
 
   *, 
   *::before, 
   *::after {
-      box-sizing: inherit;
+    box-sizing: inherit;
   }
 
   .wrapper {
+    max-width: 1020px;
     margin: 0 auto;
   }
 
+
+  /* ------ Стили для header ------- */
+
+  body {
+      margin: 0;
+  }
+
   .header {
-    width: 1020px;
     height: 89px;
     background-color: #2d303a;
   }
@@ -50,9 +57,9 @@
     font-size: 25px;
     line-height: 6px;
     color: #ffffff;
-    font-family: "Lato";
-    font-weight: 700;
-    text-align: left;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0px;
   }
 
   a {
@@ -64,7 +71,6 @@
   }
 
   .header-bottom {
-    width: 1020px;
     height: 6px;
     background-color: #323746;
   }
@@ -72,8 +78,9 @@
   .header-wrapper {
       display: flex;
       flex-wrap: wrap;
+      height: 100%;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-end;
       margin-left: 40px;
   }
 
@@ -84,13 +91,45 @@
   }
 
   .header-item {
-      margin-right: 25px;
+      margin-right: 21px;
+      list-style: none;
+  }
+
+  .header-item:last-child {
+      margin-right: 0;
   }
 
   .header-link {
     font-size: 12px;
     line-height: 6px;
     color: #ffffff;
-    font-family: "Lato";
-    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
   }
+
+.header-nav {
+    margin-bottom: 15px;
+}
+
+.header-logo {
+    margin-bottom: 25px;
+}
+
+.header-item:not(:first-child)::before {
+    content: ".";
+    position: relative;
+    right: 8px;
+    bottom: 3px;
+    color: #3a3e4d;
+    font-weight: bold;
+}
+
+.header-link:hover {
+    font-size: 13px;
+    color: #f3c6c4;
+}
+
+.header-link:active,
+.active-page {
+    color: #f06c64;
+}
