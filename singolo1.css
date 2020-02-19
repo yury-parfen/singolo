@@ -1,3 +1,21 @@
+/* lato-100 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Lato Hairline'), local('Lato-Hairline'),
+       url('../fonts/lato-v16-latin-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/lato-v16-latin-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-300 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'),
+       url('../fonts/lato-v16-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/lato-v16-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* lato-regular - latin */
 @font-face {
     font-family: 'Lato';
@@ -60,8 +78,9 @@
     font-size: 25px;
     line-height: 6px;
     color: #ffffff;
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", Arial, sans-serif;
     font-weight: 400;
+    letter-spacing: -0.5px;
   }
 
   a {
@@ -72,7 +91,7 @@
       color: #f06c64;
   }
 
-  .header-wrapper {
+  .header_wrapper {
       display: flex;
       flex-wrap: wrap;
       height: 100%;
@@ -85,21 +104,22 @@
       flex-wrap: wrap;
   }
 
-  .header-item {
-      margin-right: 21px;
+  .header_item {
+      margin-right: 22.5px;
       list-style: none;
   }
 
-  .header-item:last-child {
+  .header_item:last-child {
       margin-right: 0;
   }
 
-  .header-link {
+  .header_link {
     font-size: 12px;
     line-height: 6px;
     color: #ffffff;
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", Arial, sans-serif;
     font-weight: 400;
+    letter-spacing: -0.23px;
   }
 
 .header-nav {
@@ -110,52 +130,74 @@
     margin-bottom: 25px;
 }
 
-.header-item:not(:first-child)::before {
+.header_item:not(:first-child)::before {
     content: ".";
     position: relative;
-    right: 8px;
+    right: 10px;
     bottom: 3px;
     color: #3a3e4d;
     font-weight: bold;
 }
 
-.header-link:hover {
-    font-size: 13px;
-    color: #f3c6c4;
-}
-
-.header-link:active,
-.active-page {
+.header_link:hover {
     color: #f06c64;
 }
+
 
   /* ------ Стили для slider ------- */
 
 .slider {
-    height: 600px;
-    background-color: #f06c64;
-    border-bottom: 15px solid #ea676b;
+  height: 600px;
+  background-color: #f06c64;
+  border-bottom: 6px solid #ea676b;
 }
 
 .iphone-vertical {
-  margin-left: 52px;
+  margin-left: 50px;
   margin-top: 53px;
 }
 
 .iphone-horizontal {
   margin-left: 69px;
-  margin-bottom: 121px;
+  margin-bottom: 122px;
 }
 
 .arrow {
-  margin-bottom: 227px;
+  margin-bottom: 228px;
 }
 
-.arrow-right {
+.arrow_back {
+  margin-left: 2px;
+}
+
+.arrow_next {
+  margin-left: 51px;
   transform: rotate(180deg);
-  margin-left: 50px;
 }
 
-.arrow:hover {
-  filter: contrast(2);
+/* ------ Стили для services ------- */
+
+.services {
+  height: 500px;
+  background-color: #f2f2f2;
+  border-bottom: 6px solid #ffffff;
+  padding-top: 62px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 30px;
+  line-height: 30px;
+  color: #666d89;
+  font-family: "Lato", Arial, sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.1px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-family: "Lato", Arial, sans-serif;
+  font-weight: 100;
 }
