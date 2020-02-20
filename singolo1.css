@@ -4,8 +4,8 @@
   font-style: normal;
   font-weight: 100;
   src: local('Lato Hairline'), local('Lato-Hairline'),
-       url('../fonts/lato-v16-latin-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/lato-v16-latin-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('./assets/lato-v16-latin-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./assets/lato-v16-latin-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* lato-300 - latin */
 @font-face {
@@ -13,8 +13,8 @@
   font-style: normal;
   font-weight: 300;
   src: local('Lato Light'), local('Lato-Light'),
-       url('../fonts/lato-v16-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/lato-v16-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('./assets/lato-v16-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./assets/lato-v16-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* lato-regular - latin */
 @font-face {
@@ -22,8 +22,8 @@
     font-style: normal;
     font-weight: 400;
     src: local('Lato Regular'), local('Lato-Regular'),
-         url('/assets/lato-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('/assets/lato-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('.assets/lato-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./assets/lato-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* lato-700 - latin */
   @font-face {
@@ -31,8 +31,8 @@
     font-style: normal;
     font-weight: 700;
     src: local('Lato Bold'), local('Lato-Bold'),
-         url('/assets/lato-v16-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('/assets/lato-v16-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('./assets/lato-v16-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./assets/lato-v16-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* lato-900 - latin */
   @font-face {
@@ -40,8 +40,8 @@
     font-style: normal;
     font-weight: 900;
     src: local('Lato Black'), local('Lato-Black'),
-         url('/assets/lato-v16-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('/assets/lato-v16-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('./assets/lato-v16-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./assets/lato-v16-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
   html {
@@ -87,7 +87,7 @@
     text-decoration: none;
   }
 
-  span {
+  .star {
       color: #f06c64;
   }
 
@@ -186,6 +186,7 @@
 
 h2 {
   margin-top: 0;
+  margin-bottom: 0;
   font-size: 30px;
   line-height: 30px;
   color: #666d89;
@@ -194,10 +195,50 @@ h2 {
   letter-spacing: -0.1px;
 }
 
-p {
+.our_services {
+  margin-top: 21px;
   font-size: 18px;
   line-height: 30px;
   color: #767e9e;
   font-family: "Lato", Arial, sans-serif;
-  font-weight: 100;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.layout-3-column {
+  margin-left: 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px, 100px;
+  gap: 19px;
+}
+
+.services__content {
+  margin-top: 28px;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+h5 {
+  margin-top: 0;
+  margin-left: -1px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+}
+
+.description {
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
+}
+
+.item_services {
+  margin-left: 19px;
 }
