@@ -175,6 +175,10 @@
   transform: rotate(180deg);
 }
 
+.arrow:hover {
+  filter: saturate(1.2);
+}
+
 /* ------ Стили для services ------- */
 
 .services {
@@ -197,6 +201,7 @@ h2 {
 
 .our_services {
   margin-top: 21px;
+  margin-bottom: 28px;
   font-size: 18px;
   line-height: 30px;
   color: #767e9e;
@@ -209,36 +214,49 @@ h2 {
   margin-left: 0px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 100px, 100px;
+  grid-template-rows: 85px, 85px;
   gap: 19px;
 }
 
 .services__content {
-  margin-top: 28px;
-  height: 100px;
+  margin-top: 18px;
+  margin-bottom: 0;
+  max-height: 86px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  overflow: hidden;
+
 }
 
 h5 {
   margin-top: 0;
   margin-left: -1px;
+  margin-bottom: 0;
   font-size: 18px;
   line-height: 18px;
   color: #666d89;
   font-family: "Lato";
   font-weight: 900;
+  letter-spacing: -0.1px;
 }
 
-.description {
+.services_description {
+  margin-top: 10px;
+  margin-bottom: 0;
   font-size: 12px;
-  line-height: 22px;
+  line-height: 21.5px;
   color: #767e9e;
   font-family: "Lato";
   font-weight: 400;
+  text-align: justify;
 }
 
 .item_services {
   margin-left: 19px;
+  margin-top: -1px;
+}
+
+.layout-3-column .services__content:nth-child(3n) h5 {
+  margin-left: 1px;
 }
