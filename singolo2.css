@@ -138,7 +138,7 @@
 
     a {
         text-decoration: none;
-        padding: 0 0.9px;
+
       }
 
     .layout-4-column {
@@ -171,7 +171,7 @@
         margin-left: 2px;
     }
 
-    h5 {
+    .employee_title {
         margin-top: 11px;
         margin-left: 2px;
         margin-bottom: 0;

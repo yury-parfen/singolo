@@ -211,7 +211,7 @@ h2 {
   text-align: justify;
 }
 
-.layout-3-column {
+.services .layout-3-column {
   margin-left: 0px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
